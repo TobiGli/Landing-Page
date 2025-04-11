@@ -1,4 +1,7 @@
 import axios from 'axios';
+import BasicCard from 'src/components/Card';
+import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
 
 const fetchBooks = async () => {
     try {
@@ -14,8 +17,15 @@ fetchBooks();
 const Books = () => {
     return (
         <div>
-            <h1>Libros</h1>
-            <p>Esta es la ruta de prueba para la integración de la Google Books API.</p>
+            <div>
+                <Header></Header>
+            </div>
+            <div>
+                <BasicCard></BasicCard>
+            </div>
+            <div>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };
