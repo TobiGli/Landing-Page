@@ -1,33 +1,26 @@
-import axios from 'axios';
-import BasicCard from 'src/components/Card';
-import Header from 'src/components/Header';
-import Footer from 'src/components/Footer';
+'use client'
 
-const fetchBooks = async () => {
-    try {
-        const response = await axios.get('https://www.googleapis.com/books/v1/volumes?q=javascript');
-        console.log(response.data);
-    } catch (error) {
-        console.error('Error fetching books:', error);
-    }
-};
-
-fetchBooks();
+import * as React from 'react';
+import Grid from '@mui/material/Grid';
+import Header from '@components/Header';
+import BookCard from '@components/BookCard';
+import Footer from '@components/Footer';
+import { Card } from '@mui/material';
 
 const Books = () => {
-    return (
-        <div>
-            <div>
-                <Header></Header>
-            </div>
-            <div>
-                <BasicCard></BasicCard>
-            </div>
-            <div>
-                <Footer></Footer>
-            </div>
-        </div>
-    );
+  return (
+    <>
+      <Header />
+
+      <div className="container mx-auto">
+      <h1 className="text-3xl font-bold text-center my-6">Libros sobre JavaScript</h1>
+      <BookCard />
+    </div>
+
+
+      <Footer />
+    </>
+  );
 };
 
 export default Books;
