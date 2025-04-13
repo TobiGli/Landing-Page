@@ -6,6 +6,7 @@ const FooterNavigation = [
       links: [
         { name: 'Contacto', href: '#' },
         { name: 'Trabaja con Nosotros', href: '#' },
+        { name: 'FAQ', href: '#' },
       ],
     },
     {
