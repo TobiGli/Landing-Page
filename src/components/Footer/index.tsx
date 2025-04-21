@@ -12,15 +12,15 @@ const FooterNavigation = [
     {
       category: 'Follow us',
       links: [
-        { name: 'Instagram', href: '#' },
+        { name: 'Instagram', href: 'https://www.instagram.com/librosdelpasaje/' },
         { name: 'WhatsApp', href: '#' },
       ],
     },
     {
       category: 'Legal',
       links: [
-        { name: 'Politica de privacidad', href: '#' },
-        { name: 'Terminos y condiciones', href: '#' },
+        { name: 'Politica de privacidad', href: './PrivacyPolitics' },
+        { name: 'Terminos y condiciones', href: './terms-and-cond' },
       ],
     },
   ];

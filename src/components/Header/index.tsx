@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const navigation = [
   { name: 'Books', href: './books' },
-  { name: 'Features', href: '#' },
+  { name: 'Features', href: './features' },
 ]
 
 export default function Header() {

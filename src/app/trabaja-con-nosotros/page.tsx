@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 
-const WorkWithUs = () => {
+const TrabajaConNosotros = () => {
     return(        
 <>
     <Header />
@@ -16,4 +16,4 @@ const WorkWithUs = () => {
 )
 }
 
-export default WorkWithUs;
+export default TrabajaConNosotros;
