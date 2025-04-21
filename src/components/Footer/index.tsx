@@ -28,7 +28,7 @@ const FooterNavigation = [
 export default function Footer() {
     return (
       <>
-      <footer className="bg-white dark:bg-gray-900 relative overflow-hidden">
+      <footer className="bg-gray-900 relative overflow-hidden">
 
       <div
     aria-hidden="true"

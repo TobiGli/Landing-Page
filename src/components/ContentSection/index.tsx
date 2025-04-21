@@ -48,8 +48,8 @@ export default function ContentSection() {
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=YJNv0mKJt417PQFt"
-             width="760"
-             height="515"
+             width="600"
+             height="415"
              title="YouTube video"
              frameBorder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true, // Habilita el App Router si estás usando la carpeta `app`
+    // appDir: true, // Habilita el App Router si estás usando la carpeta `app`
   },
 };
 
