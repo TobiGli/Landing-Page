@@ -1,48 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import react from 'react'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Image from 'next/image';
 import router from 'next/router'
 
 export default function RegistrationForm() {
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-  
-      if (!username || !email || !password) {
-        setError('Please fill in all fields.');
-        return;
-      }
-  
-      try {
-        const response = await fetch('/api/register', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ username, email, password }),
-        });
-  
-        const data = await response.json();
-  
-        if (response.ok) {
-          // Handle successful registration (e.g., redirect to login page)
-          console.log('Registration successful:', data);
-        } else {
-          setError(data.message || 'Registration failed.');
-        }
-      } catch (err) {
-        setError('An error occurred. Please try again later.');
-      }
-    };
-  
+
     return (
         <>
         <Header />
