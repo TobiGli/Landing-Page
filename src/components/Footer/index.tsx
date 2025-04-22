@@ -28,7 +28,7 @@ const FooterNavigation = [
 export default function Footer() {
     return (
       <>
-      <footer className="bg-gray-900 relative overflow-hidden">
+      <footer style={{ backgroundColor: '#F0F4FF' }} className="bg-iceblue relative overflow-hidden">
 
       <div
     aria-hidden="true"
@@ -52,7 +52,7 @@ export default function Footer() {
             className="h-8 me-3"
             alt="FlowBite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap">
             Libros Unidos
           </span>
         </a>
@@ -60,10 +60,10 @@ export default function Footer() {
       <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 relative pb-20">
         {FooterNavigation.map((section, index) => (
           <div key={index}>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
               {section.category}
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+            <ul className="text-gray-500 font-medium">
               {section.links.map((link) => (
                 <li key={link.name} className="mb-4">
                   <a href={link.href} className="hover:underline">
@@ -76,9 +76,9 @@ export default function Footer() {
         ))}
       </div>
     </div>
-    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
     <div className="sm:flex sm:items-center sm:justify-between">
-      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <span className="text-sm text-gray-500 sm:text-center">
         © 2025 <a href="https://github.com/TobiGli" className="hover:underline">Tobias Gomez™</a>. All Rights Reserved.
       </span>
     </div>
