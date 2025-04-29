@@ -4,9 +4,9 @@ const FooterNavigation = [
     {
       category: 'Resources',
       links: [
-        { name: 'Contacto', href: '#' },
-        { name: 'Trabaja con Nosotros', href: '#' },
-        { name: 'FAQ', href: '#' },
+        { name: 'Contacto', href: './contacto' },
+        { name: 'Trabaja con Nosotros', href: './trabaja-con-nosotros' },
+        { name: 'FAQ', href: './faq' },
       ],
     },
     {
