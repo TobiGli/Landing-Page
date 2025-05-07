@@ -19,7 +19,7 @@ const FooterNavigation = [
     {
       category: 'Legal',
       links: [
-        { name: 'Politica de privacidad', href: './PrivacyPolitics' },
+        { name: 'Politica de privacidad', href: './privacy-politics' },
         { name: 'Terminos y condiciones', href: './terms-and-cond' },
       ],
     },
