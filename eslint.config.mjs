@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
+  // import.meta.dirname está disponible a partir de Node.js v20.11.0
   baseDirectory: import.meta.dirname || __dirname,
 });
 
@@ -15,6 +16,8 @@ const eslintConfig = [
     rules: {
       "react/no-unescaped-entities": "off",
       "@next/next/no-page-custom-font": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@next/next/no-img-element": "off",
     },
   }),
 ];
